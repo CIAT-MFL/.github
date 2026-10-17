@@ -1,0 +1,23 @@
+name: Task
+description: A scoped piece of work from the roadmap
+labels: ["type:task"]
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What will exist when this is done?
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope and out of scope
+  - type: textarea
+    id: done
+    attributes:
+      label: Definition of done
+      value: |
+        - [ ] Tests pass
+        - [ ] Schemas validate
+        - [ ] Docs updated
